@@ -11,7 +11,10 @@
 local G2L = {};
 
 -- StarterGui.Arlock Hub
-G2L["1"] = Instance.new("ScreenGui", game:GetService('CoreGui'):WaitForChild('RobloxGui'));
+G2L["1"] = Instance.new("ScreenGui")
+G2L["1"]["Name"] = [[Arlock Hub]]
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+G2L["1"]["ResetOnSpawn"] = false
 G2L["1"]["Name"] = [[Arlock Hub]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -206,6 +209,10 @@ G2L["20"] = Instance.new("LocalScript", G2L["1"]);
 -- StarterGui.LALOL Hub Backdoor.Dragify
 G2L["21"] = Instance.new("LocalScript", G2L["1"]);
 G2L["21"]["Name"] = [[Dragify]];
+
+local function StartArlockHub()
+    G2L["1"].Parent = game:GetService('CoreGui'):WaitForChild('RobloxGui')
+end
 
 -- Require G2L wrapper
 local G2L_REQUIRE = require;
