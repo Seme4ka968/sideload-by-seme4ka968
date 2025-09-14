@@ -167,7 +167,7 @@ G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], E
 G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1a"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["1a"]["Name"] = [[Button]];
-G2L["1a"]["Text"] = [[Start Scanning]];
+G2L["1a"]["Text"] = [[Find Backdoor]];
 G2L["1a"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button.UIGradient
@@ -186,7 +186,7 @@ G2L["1d"]["FontFace"] = Font.new([[rbxassetid://12187365977]], Enum.FontWeight.B
 G2L["1d"]["TextSize"] = 49;
 G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d"]["Size"] = UDim2.new(0, 460, 0, 50);
-G2L["1d"]["Text"] = [[Arlock SS]];
+G2L["1d"]["Text"] = [[Arlock SideLoad]];
 G2L["1d"]["BackgroundTransparency"] = 1;
 G2L["1d"]["Position"] = UDim2.new(0.02169983461499214, 0, 0.025362318381667137, 0);
 
@@ -550,32 +550,6 @@ end;
 G2L_MODULES[G2L["14"]] = {
 Closure = function()
     local script = G2L["14"];
---[=[
-	Lexical scanner for creating a sequence of tokens from Lua source code.
-	This is a heavily modified and Roblox-optimized version of
-	the original Penlight Lexer module:
-		https://github.com/stevedonovan/Penlight
-	Authors:
-		stevedonovan <https://github.com/stevedonovan> ----------- Original Penlight lexer author
-		ryanjmulder <https://github.com/ryanjmulder> ------------- Penlight lexer contributer
-		mpeterv <https://github.com/mpeterv> --------------------- Penlight lexer contributer
-		Tieske <https://github.com/Tieske> ----------------------- Penlight lexer contributer
-		boatbomber <https://github.com/boatbomber> --------------- Roblox port, added builtin token,
-		                                                           added patterns for incomplete syntax, bug fixes,
-		                                                           behavior changes, token optimization, thread optimization
-		                                                           Added lexer.navigator() for non-sequential reads
-		Sleitnick <https://github.com/Sleitnick> ----------------- Roblox optimizations
-		howmanysmall <https://github.com/howmanysmall> ----------- Lua + Roblox optimizations
-
-	List of possible tokens:
-		- iden
-		- keyword
-		- builtin
-		- string
-		- number
-		- comment
-		- operator
---]=]
 
 local lexer = {}
 
@@ -1552,7 +1526,6 @@ local script = G2L["20"];
 				
 				if workspace:FindFirstChild(code) then
 					
-					notify('Backdoor found! '..os.clock()-timee..'s')
 					
 					backdoor=remote
 					debug(remote:GetFullName(), 3)
@@ -1624,7 +1597,7 @@ local script = G2L["20"];
 		if not searching then
 			searching=true
 			debug('Scanning...', 3)
-			GUI.Scanner.Button.Text='Scanning...'
+			GUI.Scanner.Button.Text='Findinng...'
 			if not findRemote() then
 				GUI.Scanner.Button.Text='No backdoor :('
 				searching=false
