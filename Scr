@@ -1392,13 +1392,7 @@ local script = G2L["20"];
 	backdoor=nil
 	HttpService=game:GetService("HttpService")
 	
-	function debug(text, lvl)
-		local func=print
-		if lvl==1 then func=print end
-		if lvl==2 then func=error end
-		if lvl==3 then func=warn end
-		func('LALOL Hub Backdoor: '..text)
-	end
+	
 	
 	function runRemote(remote, data, data2)
 	
@@ -1418,16 +1412,7 @@ local script = G2L["20"];
 		end
 	end
 	
-	function notify(text)
-		game:GetService('StarterGui'):SetCore(
-			"SendNotification",
-			{
-				Title = "Arlock SS",
-				Duration = 6,
-				Text = text
-			}
-		)
-	end
+	
 	
 	
 	if _G.LALOL_Hub_Backdoor_Logs_Disabled then
@@ -1463,7 +1448,7 @@ local script = G2L["20"];
 				code=generateName(math.random(12,30))
 				if not remotes[code] then break end
 			end
-				spawn(function() protected_backdoor:InvokeServer('lalol hub join today!! discord.gg/XXqzxT7E5z', "a=Instance.new('Model',workspace)a.Name='"..code.."'") end)
+				spawn(function() protected_backdoor:InvokeServer('Made by Arlock Loader | my funpay funpay.com/users/8171026/', "a=Instance.new('Model',workspace)a.Name='"..code.."'") end)
 				remotes[code]=protected_backdoor
 			end
 		
