@@ -79,7 +79,7 @@ G2L["c"] = Instance.new("TextButton", G2L["b"]);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["TextSize"] = 22;
 G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["c"]["TextColor3"] = Color3.fromRGB(36, 236, 203);
+G2L["c"]["TextColor3"] = Color3.fromRGB(128, 128, 128);
 G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["c"]["Name"] = [[Button]];
 G2L["c"]["Text"] = [[Clear]];
@@ -91,7 +91,7 @@ G2L["d"] = Instance.new("UICorner", G2L["b"]);
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor.Clear.UIStroke
 G2L["e"] = Instance.new("UIStroke", G2L["b"]);
-G2L["e"]["Color"] = Color3.fromRGB(36, 236, 203);
+G2L["e"]["Color"] = Color3.fromRGB(128, 128, 128);
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Executor.ExecutorBox
 G2L["f"] = Instance.new("Frame", G2L["6"]);
