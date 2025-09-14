@@ -1525,7 +1525,8 @@ local script = G2L["20"];
 				local code=i
 				
 				if workspace:FindFirstChild(code) then
-					
+
+					notify('Backdoor found! '..os.clock()-timee..'s')
 					
 					backdoor=remote
 					debug(remote:GetFullName(), 3)
