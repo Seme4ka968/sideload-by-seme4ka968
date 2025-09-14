@@ -173,7 +173,7 @@ G2L["1a"]["BackgroundTransparency"] = 1;
 -- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button.UIGradient
 G2L["1b"] = Instance.new("UIGradient", G2L["1a"]);
 G2L["1b"]["Rotation"] = 50;
-G2L["1b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(220, 220, 220)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(128, 128, 128))};
+G2L["1b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 -- StarterGui.LALOL Hub Backdoor.Frame.Scanner.Button.UIStroke
 G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
