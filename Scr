@@ -115,7 +115,7 @@ G2L["11"]["TextColor3"] = Color3.fromRGB(198, 119, 88);
 G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["11"]["MultiLine"] = true;
 G2L["11"]["BackgroundTransparency"] = 1;
-G2L["11"]["PlaceholderText"] = [[require(6666666).load("c00lkidd")]];
+G2L["11"]["PlaceholderText"] = [[require(Num).load("Your nickname")]];
 G2L["11"]["Size"] = UDim2.new(0, 448, 0, 150);
 G2L["11"]["Text"] = [[]];
 G2L["11"]["Position"] = UDim2.new(0.015692640095949173, 0, 0.042270027101039886, 0);
@@ -186,7 +186,7 @@ G2L["1d"]["FontFace"] = Font.new([[rbxassetid://12187365977]], Enum.FontWeight.B
 G2L["1d"]["TextSize"] = 49;
 G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d"]["Size"] = UDim2.new(0, 460, 0, 50);
-G2L["1d"]["Text"] = [[LALOL Hub Backdoor]];
+G2L["1d"]["Text"] = [[Arlock SS]];
 G2L["1d"]["BackgroundTransparency"] = 1;
 G2L["1d"]["Position"] = UDim2.new(0.02169983461499214, 0, 0.025362318381667137, 0);
 
